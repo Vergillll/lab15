@@ -1,0 +1,19 @@
+N = int(input())
+A = []
+B = []
+for i in range(0, N):
+    A.append(int(input()))
+for i in range(0, N):
+    B.append(int(input()))
+print(A, B)
+    
+for i in range(0, N):
+    A.append(B[i])
+for i in range(0, N):
+    B.append(A[i])
+
+for i in range(0, N):
+    del A[0]
+    del B[0]
+
+print(A, B)
