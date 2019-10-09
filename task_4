@@ -1,0 +1,25 @@
+N = int(input())
+A = []
+for i in range(0, N):
+    A.append(int(input()))
+
+print(A)
+
+min = A[0]
+ik = 0
+max = A[0]
+mk = 0
+for i in range(0, N):
+    if A[i] < min:
+        min = A[i]
+        ik = i
+    if A[i] > max:
+        max = A[i]
+        mk = i
+print(min, ik)
+print(max, mk)
+
+for i in range(ik+1, mk):
+    A[i] = 0
+
+print(A)
