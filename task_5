@@ -1,0 +1,14 @@
+N = int(input())
+A = []
+for i in range(0, N):
+    A.append(int(input()))
+k = 0
+print(A)
+for i in range(1, N):
+    if A[0] > A[i]:
+        k += 1
+print(k)
+A.insert(k+1, A[0])
+del A[0]
+
+print(A)
